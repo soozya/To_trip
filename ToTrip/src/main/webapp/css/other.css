@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*font*/
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {list-style:none;} 
+a:hover {text-decoration-line:none;} 
+
+.left_title > a:hover {
+ text-decoration-line:none;
+}
+body, ul, li, a, div {
+margin:0; padding:0;
+color:#515151;
+font-family: 'MonoplexKR-Regular';
+}
+
+.com{
+    font-family: 'MonoplexKR-Regular';
+}
+
+.left_title >a { /*로고*/
+display:inline-block;
+ font-family: 'KOTRA_BOLD-Bold';
+ font-size:40px;
+ color:#006799;
+ padding:2% 0 0 4%;
+}
+
+/*게시판 테이블*/
+.list{
+ margin-left:5%;
+ margin-right:5%
+}
+.com_tb{
+  width:80%;
+  margin-top:2%;
+  border:2px black solid
+}
+.wr_bt{	
+ margin-top:1%;
+}
+/*글쓰기 테이블*/
+.write_tb{
+  width:75%;
+  margin:auto;
+  background:#fef3f2;
+  border:2px gray solid;
+  border-spacing:1
+}
+.write_up{
+ float:right;
+ margin-top:2%;
+ margin-right:10%
+}
+.write_cancel{
+ margin-top:2%;
+ margin-left:10%
+}
+.com2{
+	margin-left:10%;
+	margin-bottom:2%;
+}
+
+/*상세보기 테이블*/
+.view{
+ margin-left:10%;
+ margin-right:10%;
+ margin-top:4%;
+}
+.view_tb{
+ width:80%;
+ border:2px black solid
+}
+.view_tb tr{
+ height:45px;
+ vertical-align:middle;
+}
+.update_bt{
+ float:right;
+ margin-right:1%;
+ margin-top:1%;
+}
+.delete_bt{
+ float:right;
+ margin-top:1%;
+}
+.com_list{
+ float:left;
+ margin-left:10%;
+ margin-top:1%
+}
+
+/*수정하기*/
+.update{
+ float:right;
+ margin-top:2%;
+ margin-right:10%
+}
+.update_cancel{
+ margin-top:2%;
+ margin-left:10%
+}

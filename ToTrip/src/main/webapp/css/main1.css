@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/*font*/
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ul {list-style:none;} 
+a {text-decoration:none;}
+
+
+body, ul, li, a, div {
+margin:0; padding:0;
+color:#515151;
+font-family: 'MonoplexKR-Regular';
+}
+
+/*Top*/
+#top{
+width:100%;
+margin:1% auto;
+}
+.title >a { /*로고*/
+ font-family: 'KOTRA_BOLD-Bold';
+ font-size:40px;
+ color:#006799;
+}
+.title > a:hover {
+ text-decoration-line:none;
+}
+.dv1 { /*로그인 정보*/
+ margin:1px auto;
+ float:right;
+ position:relative;
+ right:10%; 
+ top:-50px
+}
+
+/*메뉴 리스트*/
+#main1{
+ margin:3% 4% 0% 4%;
+}
+.list{
+ top:17%;
+ position:relative;
+
+}
+.list > li {
+  float:left;
+  position:relative;
+  background:#67b0d1;
+} 
+.list > li > a {
+  display:block; 
+  color:#ffffff; 
+  text-align:center;
+}
+.list > li:hover {
+  background:#FBE1E1;
+  text-decoration:none;
+  }
+.list > li:hover > a {
+  color:#67b0d1;
+  font-family: 'MICEGothic Bold';
+  }
+.list > li:hover > ul{
+  top:40px;
+  left:0px; 
+}
+.list ul {
+  position:absolute; 
+  top:-9999px; 
+  z-index:9999; 
+  width:100%; 
+  font:#3988fd;
+  text-align:center;
+  border:1px solid #cccccc;
+}
+.list ul li{
+  position:relative; 
+}
+.list ul a {
+  display:block;
+  color:#aaaaaa;
+  line-height:40px;
+  background:#ffffff;
+}
+.list ul a:hover {
+  color:#ffffff;
+  background:#67b0d1;
+  font-family: 'MICEGothic Bold';
+  text-decoration:none;
+}
+.list ul li:hover > ul {
+  top:0; 
+  left:100%;
+  }
+
+
+/*지역 선택*/
+.f2 { /*지역|*/
+ color:black;
+ top:10%;
+ font-size:12pt;
+ padding-left:10%
+}
+.ar1>li { /*지역명*/
+position:relative;
+text-align:center;
+float:left;
+padding:2px 2px 2px 2px;
+font-size:12pt;
+}
+.ar1 > li:hover > a { /*지역명에 마우스 올릴 때*/
+ color:#67b0d1;
+ background:#FBE1E1;
+ font-weight:bold;
+ display:block ;
+ text-decoration-line:none;
+}

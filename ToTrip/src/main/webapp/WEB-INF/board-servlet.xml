@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+<!-- (4)viewResolver(위치) prefix, 이동할 페이지의 확장자 지정(suffix) -->
+<bean id="viewResolver"
+	  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+  <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+  <property name="prefix" value="/"/>
+  <property name="suffix" value=".jsp"/>
+</bean>
+
+<!-- (2)요청에 따른 컨트롤러를 문의 -->
+<bean id="defaultHandlerMapping"
+	  class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+
+<!-- 0.DB접속(Mybatis) --> 
+<bean id="BoardDAO" class="Board.SqlMapBoardDAO"> 
+  <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+</bean>
+  
+ 
+ <!-- 1. 글목록보기(list()) property 사용해서 setter메서드 호출
+  			ref=연결시켜 가져올 상대방 id값 -->
+ <bean name="/list.do" class="Board.ListAction">
+   <property name="dao">
+     <ref bean="BoardDAO"/> 
+   </property>
+ </bean>
+ 
+ <!-- 2. 글쓰기폼으로  -->
+ <bean name="/writeform.do"
+	  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+  <property name="viewName" value="write"/>
+ </bean>
+ 
+ 
+ <!-- 3. 글쓰기(글수정과 유사) -->
+<bean name="/write.do" class="Board.WriteAction">
+   <property name="dao">
+     <ref bean="BoardDAO"/>
+   </property>
+   <property name="commandClass" value="Board.BoardCommand"/>
+ </bean>
+
+
+<!-- 4. 글 상세보기 -->
+ <bean name="/view.do" class="Board.ViewAction">
+   <property name="dao">
+     <ref bean="BoardDAO"/>
+   </property>
+ </bean>
+ 
+<!-- 5. 글 삭제하기 -->
+ <bean name="/delete.do" class="Board.DeleteAction">
+   <property name="dao">
+     <ref bean="BoardDAO"/>
+   </property>
+ </bean>
+ 
+<!-- 6. 글수정폼으로  -->
+ <bean name="/updateform.do"
+	  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+  <property name="viewName" value="update"/>
+ </bean>
+ 
+ 
+ <!-- 7. 글 수정하기(BoardDAO update())  -->
+ <bean name="/update.do" class="Board.UpdateAction">
+   <property name="dao">
+     <ref bean="BoardDAO"/>
+   </property>
+   <property name="commandClass" value="Board.BoardCommand"/>
+ </bean>
+ 
+</beans>

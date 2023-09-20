@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
+
+ <!--  
+   DB접속된 후에 DB관리(테이블의 데이터 추가,수정,검색,삭제)등을 작업하기 위해서
+   필요로하는 환경설정파일(테이블 하나당 파일로 저장해서 불러옴)
+   typeAliases : 상위패키지명.하위패키지명..불러올 클래스명(ex.DTO) => 별칭 부여 가능
+   mappers : 접속 시 불러올 테이블에 대한 정보 xml파일을 지정해줄 때 사용하는 태그
+ -->
+ <configuration>
+  <typeAliases>
+    <typeAlias type="Board.BoardCommand" alias="board"/>
+  </typeAliases>
+ 
+  <mappers>
+    <mapper resource="Board/tripboard.xml"/>
+  </mappers>
+ </configuration>

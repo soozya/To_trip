@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- parameterType : 매개변수를 입력을 받아서 처리해주는 경우의 SQL구문에 필요
+                     where  조건식 (입력을 받는 자료형) 
+     resultType : sql구문을 사용했을 때 반환값이 있는 경우
+                  대부분 select 
+     #{매개변수명} -->
+
+<mapper namespace="board">
+
+<!-- 1.글목록보기 -->
+<select id="list" resultType="board">
+ select * from tripboard order by num desc
+</select>
+
+<!-- 2.글쓰기 시 게시물 번호 -->
+<select id="getPostNum" resultType="int">
+ select max(num) from tripboard
+</select>
+
+<!-- 3.글쓰기 -->
+<insert id="write" parameterType="board">
+  insert into tripboard(num, title, content, cdate)
+   values(#{num}, #{title}, #{content}, sysdate)
+</insert>
+
+<!-- 4. 글 상세보기시 조회수 증가 -->
+<update id="viewReadcnt" parameterType="String">
+ update tripboard set readc=readc+1 where num=#{num}
+</update>
+
+<!-- 5. 글 상세보기 -->
+<select id="view" parameterType="String" resultType="board">
+ select * from tripboard where num=#{num} 
+</select>
+
+<!-- 6. 글 삭제하기 -->
+<delete id="delete" parameterType="String">
+ delete from tripboard where num=#{num}
+</delete>
+
+</mapper>
