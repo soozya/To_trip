@@ -19,6 +19,7 @@ public class WriteAction extends AbstractCommandController  {
 		System.out.println("Write의 setDao() 호출: " +dao);
 	}
 
+
 	/*
 	   1. request(요청객체) 2. response(응답객체)
 	   3.입력받은 값을 저장한 객체(Object(모두 입력이 가능함))

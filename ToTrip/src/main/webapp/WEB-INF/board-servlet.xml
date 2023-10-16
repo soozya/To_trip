@@ -12,6 +12,7 @@
   <property name="suffix" value=".jsp"/>
 </bean>
 
+
 <!-- (2)요청에 따른 컨트롤러를 문의 -->
 <bean id="defaultHandlerMapping"
 	  class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>

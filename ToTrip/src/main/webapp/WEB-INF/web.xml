@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>SpringMVC</display-name>
+  <display-name>SpringMybatis</display-name>
   
   <!-- 외부 DB에 관련된 선경설정 파일 불러오기(관련 클래스, 매개변수) -->
   <context-param>

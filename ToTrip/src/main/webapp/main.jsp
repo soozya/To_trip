@@ -20,8 +20,7 @@
 
  <!-- main1 -->
 <body>
- <jsp:include page="top.jsp"/>
-  
+<jsp:include page="top.jsp"/>
 	<p>
 	<div class="f2"> <!-- 메뉴2 지역선택 -->
 	  <ul class="ar1">
@@ -63,7 +62,7 @@
 		&nbsp;<button id="btn1" onclick="booking()">예약</button>
     </div>
   </div>
-	 
+	  
 <!-- 본문3, 여행 후기 -->
 	 <div class="at3">
 	    <h3><b>❤ 현재 인기 있는 여행지</b></h3>

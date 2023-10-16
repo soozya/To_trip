@@ -19,7 +19,6 @@ public class DeleteAction implements Controller {
 									  HttpServletResponse response) throws Exception {
 		// TODO Auto-generated method stub
 
-
 		String num=request.getParameter("num");
 
 		System.out.println("삭제하려는 글번호: "+num);

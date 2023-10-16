@@ -16,6 +16,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  select * from tripboard order by num desc
 </select>
 
+
 <!-- 2.글쓰기 시 게시물 번호 -->
 <select id="getPostNum" resultType="int">
  select max(num) from tripboard

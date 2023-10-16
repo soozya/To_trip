@@ -17,6 +17,7 @@ public class SqlMapBoardDAO extends SqlSessionDaoSupport implements BoardDAO {
 		return getSqlSession().selectList("list");
 	}
 
+
     @Override
 	public int getPostNum() throws DataAccessException {
 	    Integer result = (Integer)getSqlSession().selectOne("getPostNum");

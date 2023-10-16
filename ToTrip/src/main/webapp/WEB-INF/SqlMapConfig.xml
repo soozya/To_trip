@@ -17,3 +17,4 @@
     <mapper resource="Board/tripboard.xml"/>
   </mappers>
  </configuration>
+ 

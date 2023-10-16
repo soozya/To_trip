@@ -5,6 +5,7 @@ import java.util.Date;
 //사용자로부터 값을 입력 받는 것
 public class BoardCommand {
 
+
 	int num, readc;
 	String title, content;
 	Date cdate;

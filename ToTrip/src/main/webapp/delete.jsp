@@ -16,7 +16,6 @@
    <h2 class="com text-center"><b>커뮤니티</b></h2>
    <h5 class="com text-center">여행에 대한 자유로운 대화를 나누어보세요!</h5>
    <p> <hr>
-
  
  <jsp:include page="footer.jsp" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

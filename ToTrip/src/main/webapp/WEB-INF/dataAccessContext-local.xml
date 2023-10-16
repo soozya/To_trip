@@ -15,6 +15,7 @@
   </property>
 </bean>
 
+
 <!-- 2. jdbc.properties파일에서 각각의 키명에 해당되는 값을 메모리에 저장
  	   메모리 해제 destroy-method="프로그램 종료시 자동으로 호출할 메서드명"
  	   close메서드(메모리 해제)

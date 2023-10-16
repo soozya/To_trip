@@ -23,13 +23,13 @@
      	<tr>
      	  <td height="40" align="center" valign="middle" width="10%"><b>글 제목</b></td>
      	  <td height="40" width="90%"> 
-     	    <input type="text" name="title" size="139"
+     	    <input type="text" name="title" size="129"
      		          placeholder="제목을 입력해 주세요." required />
       	  </td>
       	</tr>
       	<tr>
       	  <td align="center" valign="top"><b>글 내용</b></td>
-     	  <td><textarea name="content" rows="10" cols="140"
+     	  <td><textarea name="content" rows="10" cols="130"
      					 placeholder="내용을 입력해 주세요." required></textarea>
      	  </td>
       	</tr>

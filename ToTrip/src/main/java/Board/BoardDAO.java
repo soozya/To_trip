@@ -6,6 +6,7 @@ import org.springframework.dao.DataAccessException;
 
 public interface BoardDAO {
 
+
 	//1.글 목록보기
 		public List list() throws DataAccessException;
 

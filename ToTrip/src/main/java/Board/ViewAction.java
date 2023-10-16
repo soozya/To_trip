@@ -15,6 +15,7 @@ public class ViewAction implements Controller {
 		System.out.println("ViewAction setDao() 호출:" +dao);
 	}
 
+
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request,
 									  HttpServletResponse response) throws Exception {

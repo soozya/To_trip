@@ -7,6 +7,7 @@
   	});
   });
   
+  
 function booking(){
   var selected= $("#datepicker").val();
 	if (selected) {

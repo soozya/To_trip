@@ -7,6 +7,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main2.css" rel="stylesheet">
 </head>
+
 <body>
       <footer class="ft1">
 		<div class="nv3">

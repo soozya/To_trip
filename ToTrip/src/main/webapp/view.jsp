@@ -12,7 +12,6 @@
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
-
 </head>
 <body> 
    <div class="left_title"><a href="main.jsp">함께 여행</a></div>

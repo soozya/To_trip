@@ -14,8 +14,7 @@
  
 <title>::회원가입::</title>
 <script>    
-   
-    
+       
 $(function(){
   $('#email_sel').change(function(){
 	$("#email_sel option:selected").each(function(){

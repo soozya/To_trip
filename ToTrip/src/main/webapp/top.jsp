@@ -10,6 +10,7 @@
   <link href="css/main1.css" rel="stylesheet">
  <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
   <div id="top">
 	<header class="title text-center">
