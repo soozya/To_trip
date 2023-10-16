@@ -1,8 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=egg&color=FFECA4&height=150&section=header&text=개인프로젝트-여행후기%20사이트%20[함께여행]&fontSize=25" />
 
 [![Tistory's Badge](https://github-readme-tistory-card.vercel.app/api/badge?name=Tistory)](https://soozya.tistory.com/)
-
-![Totrip](https://github.com/soozya/To_trip/assets/122772589/a31128e8-b7e1-4cdc-84f9-dcfbe9830f55)
+![Totrip](https://github.com/soozya/To_trip/assets/122772589/ed404430-84f6-4382-99c7-3de3a51c3ed0)
 
 ### ✨ SUBJECT
  코로나 이후 여행의 수요가 증가함에 따라 국내 여행지에 대한 추천 및 후기를 공유할 수 있는 사이트를 제작해보았습니다.<br>
